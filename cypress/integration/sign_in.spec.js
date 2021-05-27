@@ -1,6 +1,6 @@
 describe('Autenticação', () => {
 
-  it('Efetuar login com usuário e senha válidos', () => {
+  it('Efetuar login com usuário e senha válidos', { tags: 'critical' }, () => {
     const { email, password } = Cypress.env('user');
 
     cy.visit('/');
